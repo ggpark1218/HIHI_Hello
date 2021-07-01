@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCafe">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아메리카노 (1000원)"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_Americano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="#9F97CDC8"
+        android:hint="주문 개수를 입력하세요." />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카페라떼 (1500원)"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_latte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="#9F97CDC8"
+        android:hint="주문 개수를 입력하세요." />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="카페모카 (1700원)"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/et_moca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="#9F97CDC8"
+        android:hint="주문 개수를 입력하세요." />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="할인카드 있음(10%할인)" />
+
+    <Button
+        android:onClick="onCoffeeCal"
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="총 금액 계산" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:textColor="#5855B6"
+        android:textSize="16sp"
+        android:text="주문개수 : " />
+
+    <TextView
+        android:id="@+id/tv_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:textColor="#5855B6"
+        android:textSize="16sp"
+        android:text="할인금액 : " />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:textColor="#5855B6"
+        android:textSize="16sp"
+        android:text="결제금액 : " />
+</LinearLayout>

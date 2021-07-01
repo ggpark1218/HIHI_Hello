@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onCountClick(View view) {
         //count++ 하면서 textview에 보이기
-        count++;
-        textView.setText(count + ""); //int 에서 text로 바꾸기
+//        count++;
+//        textView.setText(count + ""); //int 에서 text로 바꾸기
+        Integer.parseInt(textView.getText().toString());
+        textView.setText((count++)+"");
     }
 }
